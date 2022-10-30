@@ -1,8 +1,11 @@
-### Hi there 👋
+# Greetings human.
+
+### ⌕ Aspen :D
+### ⌕ Pronouns : she/her
+### ⌕ Bookworm, amateur programmer
+### ⌕ I also love to draw and read!
 
 <!--
-**cyber-sprout/cyber-sprout** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...

@@ -1,0 +1,437 @@
+#cartoon {
+    --line: #fcbe95;
+    --skin: #fca;
+    --iris: linear-gradient(to bottom, #6bc2f2, #5d90e8);
+    --hair: #66453e;
+    --dye: #7fa4ba;
+    width: 80vmin;
+    height: 80vmin;
+    <!-- background: #f002;
+    <!-- background-image:
+      repeating-linear-gradient(#0000 0 9.5%, #0002 10%),
+      repeating-linear-gradient(to left, #0000 0 9.5%, #0002 10%)
+      ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--line);
+  }
+  
+  #cartoon div,
+  #cartoon div.ha,
+  #cartoon div.hb {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .border {
+    width: 100vmin;
+    height: 100vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1vmin solid #f0f0f0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .bg {
+    width: 80vmin;
+    height: 80vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #f002;
+    transform: translate(-50%, -50%);
+  }
+  
+  .shirt {
+    width: 56vmin;
+    height: 20vmin;
+    background-color: #edf4f7;
+    left: 15%;
+    top: 87%;
+    border-radius: 100% / 130% 130% 0 0;
+    overflow: hidden;
+  }
+  
+  .skinbit {
+    width: 25vmin;
+    height: 15vmin;
+    background-color: var(--skin);
+    border-radius: 100%;
+    left: 27.5%;
+    top: -30%;
+  }
+  
+  .strap1 {
+    width: 6vmin;
+    height: 26vmin;
+    background-color: var(--dye);
+    left: 16%;
+    top: -20%;
+  }
+  
+  .strap2 {
+    width: 6vmin;
+    height: 26vmin;
+    background-color: var(--dye);
+    right: 16%;
+    top: -20%;
+  }
+  
+  .shirtshadow {
+    height: 22vmin;
+    width: 20vmin;
+    left: -12vmin;
+    border-radius: 100%;
+    box-shadow: 5vmin 5vmin #dfe7e8;
+    top: -17%;
+  }
+  
+  .shirtshadow2 {
+    transform: scaleX(-1);
+    height: 22vmin;
+    width: 20vmin;
+    left: 48vmin;
+    border-radius: 100%;
+    box-shadow: 5vmin 5vmin #dfe7e8;
+    top: -17%;
+  }
+  
+  .shirtshadow3 {
+    transform: scaleX(-1);
+    height: 23vmin;
+    width: 20vmin;
+    left: 16vmin;
+    border-radius: 100%;
+    box-shadow: 5vmin 5vmin #dfe7e8;
+    top: -39%;
+  }
+  
+  .shirtshadow4 {
+    height: 23vmin;
+    width: 20vmin;
+    left: 20vmin;
+    border-radius: 100%;
+    box-shadow: 5vmin 5vmin #dfe7e8;
+    top: -39%;
+  }
+  
+  .face {
+    width: 45%;
+    height: 60%;
+    background: var(--skin);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100% / 60% 60% 120% 120%;
+    border-bottom-width: 0.75vmin;
+    border-top-width: 0.33vmin;
+  }
+  
+  .mouth {
+    color: #dea985;
+    width: 23%;
+    height: 8%;
+    border-radius: 100%;
+    box-shadow: -1vmin 1.5vmin 0 -1vmin;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) rotate(5deg);
+  }
+  
+  .ear {
+    width: 15%;
+    height: 20%;
+    background: var(--skin);
+    border-radius: 100% / 70% 50% 20% 120%;
+    box-shadow: -0.125min -0.25vmin;
+    top: 40%;
+    left: 22%;
+    transform: rotate(-15deg);
+    overflow: hidden;
+  }
+  
+  .earshadow {
+    height: 20vmin;
+    width: 15vmin;
+    border-radius: 100%;
+    box-shadow: 5vmin 5vmin #ebbc9d;
+    left: -110%;
+    top: -45%;
+    transform: rotate(-10deg);
+  }
+  
+  .ear + .ear {
+    left: 63%;
+    top: 40%;
+    transform: scaleX(-1) rotate(-15deg);
+  }
+  
+  .eye {
+    width: 14%;
+    height: 14%;
+    background: #fff;
+    border: 0.5min solid;
+    top: 42%;
+    left: 30%;
+    border-radius: 100% / 100% 70% 20% 30%;
+    border-top: 0.7vmin solid #5e403a;
+    border-left: 0.7vmin solid #472f2a;
+    overflow: hidden;
+    box-shadow:
+      0 -0.125vmin,
+      0 -2.5vmin 0 0.001vmin var(--skin),
+      0 -4vmin #5e403a;
+  }
+  
+  .eye + .eye {
+    left: auto;
+    right: 30%;
+    transform: scaleX(-1);
+  }
+  
+  .iris {
+    left: 40%;
+    width: 9vmin;
+    height: 11vmin;
+    background: var(--iris);
+    border-radius: 60% / 100% 30% 30% 90%;
+  }
+  
+  .pupil {
+    width: 3.2vmin;
+    height: 6vmin;
+    left: 56%;
+    top: 23%;
+    background: black;
+    border-radius: 100% / 80% 80% 80% 80%;
+  }
+  
+  .highlight1 {
+    width: 3vmin;
+    height: 4vmin;
+    left: 52%;
+    top: 10%;
+    background: white;
+    border-radius: 100%;
+  }
+  
+  .highlight2 {
+    width: 2vmin;
+    height: 2vmin;
+    left: 72%;
+    top: 68%;
+    background: white;
+    border-radius: 100%;
+  }
+  
+  .eyelashes {
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+    box-shadow: -1.5vmin 1vmin #5e403a;
+    transform: rotate(-60deg);
+    left: 26%;
+    top: 38%;
+  }
+  
+  .eyelashes + .eyelashes {
+    left: auto;
+    right: 26.5%;
+    transform: rotate(-60deg);
+  }
+  
+  .nose {
+    background: #e3a896;
+    width: 0.7%;
+    height: 4%;
+    top: 55%;
+    left: 50%;
+    border-radius: 70%;
+  }
+  
+  .bangs {
+    width: 30%;
+    height: 69%;
+    border-radius: 100%;
+    box-shadow: -2vmin -5vmin var(--dye);
+    transform: rotate(-10deg);
+    left: 30%;
+    top: 28%;
+  }
+  
+  .bangs2 {
+    width: 30%;
+    height: 69%;
+    border-radius: 100%;
+    box-shadow: 2vmin -5vmin #6e4942;
+    transform: rotate(8deg);
+    right: 29%;
+    top: 28%;
+  }
+  
+  .back-hair {
+    width: 44vmin;
+    height: 55vmin;
+    background-color: var(--hair);
+    border-radius: 100% / 80% 80% 100% 100%;
+    left: 22.4%;
+    top: 12%;
+    
+  }
+  
+  .head-hair {
+    width: 20vmin;
+    height: 8vmin;
+    background-color: var(--hair);
+    left: 37%;
+    top: 17%;
+  }
+  
+  .random-hair {
+    width: 0;
+    height: 5px;
+    border-left: 5vmin solid transparent;
+    border-top: 7vmin solid var(--hair);
+    border-right: 5vmin solid transparent;
+    left: 43.8%;
+    top: 26.4%;
+  }
+  
+  .neck {
+    width: 19%;
+    height: 20%;
+    background: var(--skin);
+    top: 70%;
+    left: 40.5%;
+    transform: translated(-50%);
+    overflow: hidden;
+  }
+  
+  .neck-shadow {
+    width: 20vmin;
+    height: 30vmin;
+    background-color: #ebbc9d;
+    bottom: 20%;
+    right: -15%;
+    border-radius: 100%;
+  }
+  
+  .bangshadow1 {
+    width: 100%;
+    height: 110%;
+    border-radius: 100%;
+    box-shadow: -2vmin -5vmin #5c3f38;
+    transform: rotate(-50deg);
+    left: 20%;
+    top: 10%;
+  }
+  
+  .bangshadow2 {
+    width: 100%;
+    height: 110%;
+    border-radius: 100%;
+    box-shadow: 2vmin -5vmin #5c3f38;
+    transform: rotate(50deg);
+    left: -20%;
+    top: 10%;
+  }
+  
+  .bun1 {
+    width: 25vmin;
+    height: 25vmin;
+    background-color: var(--hair);
+    border-radius: 100%;
+    left: 10%;
+    top: 10%;
+    overflow: hidden;
+  }
+  
+  .bun2 {
+    width: 25vmin;
+    height: 25vmin;
+    background-color: var(--hair);
+    border-radius: 100%;
+    right: 10%;
+    top: 10%;
+    overflow: hidden;
+  }
+  
+  .bunshadow1 {
+    width: 30vmin;
+    height: 35vmin;
+    border-radius: 100%;
+    box-shadow: 5vmin 10vmin #5c3f38;
+    top: -60%;
+    left: -68%;
+    transform: rotate(-30deg);
+  }
+  
+  .bunshadow2 {
+    width: 30vmin;
+    height: 35vmin;
+    border-radius: 100%;
+    box-shadow: -5vmin 10vmin #5c3f38;
+    top: -70%;
+    right: -57%;
+    transform: rotate(10deg)
+  }
+  
+  .streak {
+    width: 17vmin;
+    height: 30vmin;
+    border-radius: 100%;
+    box-shadow: -2vmin 2vmin var(--dye);
+    top: -50%;
+    right: -3%;
+    transform: rotate(-60deg);
+  }
+  
+  .excess {
+    width: 6vmin;
+    height: 10vmin;
+    border-radius: 100%;
+    box-shadow: -2vmin -2vmin var(--dye);
+    transform: rotate(-20deg);
+    left: 48%;
+    top: 1.2%;
+  }
+  
+  .blush {
+    width: 33vmin;
+    height: 10vmin;
+    background-image: linear-gradient(#fca, #ffb8aa, #fca);
+    border-radius: 30%;
+    left: 29%;
+    top: 50%;
+  }
+  
+  .earing {
+    width: 5vmin;
+    height: 10vmin;
+    border: 0.8vmin solid #e0d4af;
+    border-radius: 100%;
+    left: 22%;
+    top: 54%;
+  }
+  
+  .earing2 {
+    width: 5vmin;
+    height: 10vmin;
+    border: 0.8vmin solid #e0d4af;
+    border-radius: 100%;
+    right: 22%;
+    top: 54%;
+  }
+  
+  .overall {
+    width: 30vmin;
+    height: 5vmin;
+    background-color: var(--dye);
+    top: 106%;
+    left: 30%;
+  }
